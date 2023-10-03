@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import json from "./assets/data.json";
 
 import lybitos from "./assets/Lybitos-Strava.png";
-import positic from "./assets/positic.png";
+import positic from "./assets/Positic.png";
 import ultra from "./assets/Ultra-buddy.png";
 
 const getImageUrl = function (name) {
