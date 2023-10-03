@@ -1,0 +1,158 @@
+{
+  "experiences": [
+    {
+      "roles": [
+        {
+          "role": "Staff Software Engineer",
+          "period": {
+            "start": "July 2022",
+            "end": "Present"
+          }
+        },
+        {
+          "role": "Senior Software Engineer",
+          "period": {
+            "start": "Jan 2020",
+            "end": "June 2022"
+          }
+        }
+      ],
+      "company": "Dolby.io",
+      "tasks": [
+        "Deliver high-quality, robust production code for a diverse array of projects,",
+        "Contribute extensively to the creation of the Dolby.io JavaScript SDK,",
+        "Develop and style interactive web applications for Dolby.io,",
+        "Collaborate with other engineers to create new brands, design systems and websites for Dolby.io,",
+        "Engineer and improve major features of the proprietary Mixer layout application."
+      ],
+      "stack": ["JavaScript", "TypeScript", "React", "Redux", "styled-components", "WebRTC", "CSS", "HTML", "Webpack", "Rollup.js"]
+    },
+    {
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "period": {
+            "start": "Jan 2007",
+            "end": "Dec 2019"
+          }
+        }
+      ],
+      "company": "Lectra",
+      "tasks": [
+        "Developed, maintained and shipped production code for client websites primarily using HTML, CSS, Sass and JavaScript,",
+        "Integrated Lectra Fashion PLM into Adobe Creative Suite and Adobe Creative Cloud,",
+        "Built and shipped test automation tools for Modaris (CAD Application),",
+        "Architected and implemented an Adobe Illustrator plug-in for exchanging graphical data with Kaledo Designer,",
+        "Collaborated with other engineers to create a demo application using new Microsoft technologies: Kaledo Trend."
+      ],
+      "stack": ["C++", "C#", "WPF", "Perl", "Adobe Flex", "JavaScript", "TypeScript", "React", "CSS", "HTML"]
+    },
+    {
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "period": {
+            "start": "Jan 2006",
+            "end": "June 2006"
+          }
+        }
+      ],
+      "company": "Packard Bell",
+      "tasks": [
+        "Architected and shipped extensions for Windows Media Center."
+      ],
+      "stack": ["C#"]
+    },
+    {
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "period": {
+            "start": "Oct 2002",
+            "end" : "Nov 2005"
+          }
+        }
+      ],
+      "company": "I2M (Imagerie Materiel Medical)",
+      "tasks": [
+        "Prototyped, designed and built a command station for x-ray generators,",
+        "Developed, maintained and shipped a desktop application used to drive x-ray generators."
+      ],
+      "stack": ["C++", "MFC", "x86 Assembly"]
+    }
+  ],
+  "skills": {
+    "Programming languages": ["JavaScript", "TypeScript", "HTML", "CSS", "Sass", "C#", "C++", "WPF"],
+    "Libraries and frameworks": ["React", "Next.js", "Gatsby", "React Native"],
+    "Tools and platforms": ["Git", "GitHub", "Vercel", "Netlify", "Docker", "Webpack", "Rollup.js", "Vite", "Storybook"]
+  },
+  "education": [
+    {
+      "school": "Ecole supérieure des technologies électroniques, informatique et infographie",
+      "title": "Diplôme de maître ingénieur en sciences et techniques: systèmes électroniques, réseaux informatiques et télécommunications",
+      "location": "Bordeaux",
+      "period": {
+        "start": "2000",
+        "end": "2002"
+      }
+    },
+    {
+      "school": "L.T.P. La Baronnerie",
+      "title": "B.T.S. électronique",
+      "location": "Angers",
+      "period": {
+        "start": "1998",
+        "end": "2000"
+      }
+    },
+    {
+      "school": "Lycée Saint Martin",
+      "title": "Baccalauréat scientifique",
+      "location": "Angers",
+      "period": {
+        "start": "1995",
+        "end": "1998"
+      }
+    }
+  ],
+  "selectedProjects": [
+    {
+      "name": "Lybitos-Strava",
+      "description": "React Native application consuming Strava Rest APIs.",
+      "stack": ["JavaScript", "React", "Redux", "Redux Saga", "React Native", "Strava API"],
+      "url": "https://github.com/totorototo/strava",
+      "thumbnail": "lybitos"
+
+    },
+    {
+      "name": "Ultra-Buddy",
+      "description": "Progressive web application for trail runners.",
+      "stack": ["JavaScript", "React", "Vercel", "d3js", "mapbox"],
+      "url": "https://github.com/totorototo/ultra-buddy",
+      "thumbnail": "ultra"
+    },
+    {
+      "name": "Positic",
+      "description": "Manipulate geolocation with ease.",
+      "stack": ["TypeScript", "Rollup.js"],
+      "url": "https://github.com/totorototo/positic",
+      "thumbnail": "positic"
+    }
+  ],
+  "interests": ["running", "music", "video games", "sport climbing"],
+  "about": [
+    "Back in 1998, I decided to try my hand at creating desktop applications and tumbled head first into the rabbit hole of coding. Fast-forward to today, and I’ve had the privilege of building software for start-ups, small companies, and a huge corporations.",
+    "My main focus these days is building products and leading projects for our clients at Dolby.io. In my free time, I have also released web applications and libraries that cover everything you need to know for your next trail running race.",
+    "When I'm not at the computer, I'm usually road/trail running, hanging out with my wife and daughter or spending some time listening to music."
+  ],
+  "general": {
+    "name": "Thomas Gilbert",
+    "role": "Staff Software Engineer at Dolby.io",
+    "pickupLine": "I build accessible, inclusive products and digital experiences for the web.",
+    "email": "thomas.gilbert3@free.fr",
+    "github": "https://github.com/totorototo",
+    "webSiteUrl": "https://totorototo.github.io/resume/",
+    "linkedin": "https://www.linkedin.com/in/thomas-gilbert-b96b3a100",
+    "twitter": "https://twitter.com/LLogicielle"
+  }
+}

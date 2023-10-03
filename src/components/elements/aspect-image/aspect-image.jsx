@@ -1,0 +1,19 @@
+import React, { forwardRef } from "react";
+import styled from "styled-components";
+import { Image } from "../image";
+import { AspectRatio } from "../aspect-ratio";
+
+const CoverImage = styled(Image)({
+  objectFit: "cover",
+  objectPosition: "center",
+});
+
+export const AspectImage = forwardRef(({ ratio, children, ...props }, ref) => (
+  <AspectRatio ratio={ratio}>
+    <CoverImage ref={ref} {...props} />
+  </AspectRatio>
+));
+
+AspectImage.defaultProps = {
+  ratio: 1 / 1,
+};

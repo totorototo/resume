@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "polished": "^4.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.8",
+    "styled-system": "^5.1.5",
+    "system-components": "^3.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
