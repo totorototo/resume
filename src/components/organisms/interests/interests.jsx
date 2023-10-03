@@ -7,17 +7,9 @@ export const Interests = ({ interests }) => {
         Interests
       </Text>
       <Flex mb={[4]}>
-        {interests.map((interest, index) => (
-          <Text
-            mb={[1]}
-            mr={[2]}
-            fontSize={[2]}
-            color={"text.secondary"}
-            key={index}
-          >
-            {interest}
-          </Text>
-        ))}
+        <Text mb={[1]} mr={[2]} fontSize={[2]} color={"text.secondary"}>
+          {interests.map((interest) => interest).join(", ")}
+        </Text>
       </Flex>
     </Flex>
   );
