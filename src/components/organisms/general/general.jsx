@@ -1,4 +1,4 @@
-import { Flex, Heading, Link, Text } from "../../elements/index.js";
+import { Flex, Heading, Icons, Link, Text } from "../../elements/index.js";
 
 export const General = ({ general }) => {
   return (
@@ -25,7 +25,7 @@ export const General = ({ general }) => {
           fontSize={[3]}
           fontWeight={["300"]}
         >
-          linkedin
+          <Icons.Linkedin title="twitter" color="text.inverse" />
         </Link>
         <Link
           mr={[2, 3]}
@@ -35,7 +35,7 @@ export const General = ({ general }) => {
           variant="nav1"
           color={"text.inverse"}
         >
-          github
+          <Icons.Github title="twitter" color="text.inverse" />
         </Link>
         <Link
           fontSize={[3]}
@@ -44,7 +44,7 @@ export const General = ({ general }) => {
           variant="nav1"
           color={"text.inverse"}
         >
-          twitter
+          <Icons.Twitter title="twitter" color="text.inverse" />
         </Link>
       </Flex>
     </>
