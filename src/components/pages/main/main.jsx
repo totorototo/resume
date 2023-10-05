@@ -34,12 +34,13 @@ export const Main = ({
         top={[20, 0, 0]}
         position={["static", "static", "sticky"]}
         width={["100%", "100%", "50%"]}
-        height={["25%", "25%", "100%"]}
+        height={["20%", "20%", "100%"]}
         color={"text.inverse"}
         flexDirection={["column"]}
         flex={1}
         p={[2, 2, 4]}
         maxWidth={["640px"]}
+        mb={[4, 4, 0]}
       >
         <General general={general} />
       </Flex>
@@ -47,7 +48,7 @@ export const Main = ({
       <Flex
         flexDirection={["column"]}
         width={["100%", "100%", "50%"]}
-        height={["75%", "75%", "100%"]}
+        height={["80%", "80%", "100%"]}
         p={[2, 2, 4]}
         maxWidth={["640px"]}
       >
