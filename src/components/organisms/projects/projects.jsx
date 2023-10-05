@@ -22,6 +22,7 @@ export const Projects = ({ propjects }) => {
         <Flex flexDirection={["column"]} mb={[3]} key={index}>
           <Flex flexDirection={"row"} alignItems={"flex-start"}>
             <Image
+              alt={"project logo"}
               mt={[1]}
               maxWidth={64}
               maxHeight={64}
