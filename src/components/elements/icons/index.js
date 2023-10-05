@@ -23,8 +23,15 @@ import { default as Record } from "./record";
 import { default as Settings } from "./settings";
 import { default as Handset } from "./handset";
 import { default as RecordFill } from "./record-fill";
+import { default as Github } from "./github.jsx";
+import { default as Linkedin } from "./linkedin.jsx";
+import { default as Twitter } from "./twitter-x.jsx";
+
 
 export const Icons = {
+  Github,
+  Linkedin,
+  Twitter,
   CheckCircle,
   CheckboxBlank,
   CheckboxChecked,
