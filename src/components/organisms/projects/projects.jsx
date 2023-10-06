@@ -15,8 +15,13 @@ const getImageUrl = function (name) {
 export const Projects = ({ propjects }) => {
   return (
     <Flex mb={[4]} flexDirection={["column"]}>
-      <Text mb={[3]} fontSize={[3, 4]} color={"text.inverse"}>
-        Projects
+      <Text
+        fontFamily={"CabinSketch"}
+        mb={[3]}
+        fontSize={[3, 4]}
+        color={"text.inverse"}
+      >
+        Side Projects
       </Text>
       {propjects.map((project, index) => (
         <Flex flexDirection={["column"]} mb={[3]} key={index}>

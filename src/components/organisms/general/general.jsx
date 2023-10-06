@@ -3,7 +3,9 @@ import { Flex, Heading, Icons, Link, Text } from "../../elements/index.js";
 export const General = ({ general }) => {
   return (
     <>
-      <Heading color={"text.inverse"}>{general.name}</Heading>
+      <Heading fontFamily={"CabinSketch"} color={"text.inverse"}>
+        {general.name}
+      </Heading>
       <Heading pt={[2]} color={"text.inverse"} variant={"heading-5"}>
         {general.role}
       </Heading>
@@ -21,14 +23,14 @@ export const General = ({ general }) => {
           href={general.linkedin}
           variant="nav1"
           color={"text.inverse"}
-          mx={[2, 3]}
+          mr={[3]}
           fontSize={[3]}
           fontWeight={["300"]}
         >
           <Icons.Linkedin title="twitter" color="text.inverse" />
         </Link>
         <Link
-          mr={[2, 3]}
+          mr={[3]}
           fontSize={[3]}
           fontWeight={["300"]}
           href={general.github}
