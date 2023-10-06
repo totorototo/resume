@@ -4,7 +4,15 @@ import App from "./App.jsx";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import theme from "./theme/Theme";
 
+import CabinSketch from "./assets/fonts/CabinSketch-Regular.ttf";
+
 const GlobalStyle = createGlobalStyle`
+
+  @font-face {
+    font-family: CabinSketch;
+    src: url('${CabinSketch}') format('opentype');
+  }
+  
   #root {
     height: 100vh;
     display: flex;
@@ -36,5 +44,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <App />
     </ThemeProvider>
     <GlobalStyle />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

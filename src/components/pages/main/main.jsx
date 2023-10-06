@@ -29,12 +29,13 @@ export const Main = ({
       justifyContent={["center"]}
       overflowY={"scroll"}
       px={[2, 6]}
+      py={[2, 0]}
     >
       <Flex
         top={[20, 0, 0]}
         position={["static", "static", "sticky"]}
         width={["100%", "100%", "50%"]}
-        height={["24%", "24%", "100%"]}
+        height={["26%", "26%", "100%"]}
         color={"text.inverse"}
         flexDirection={["column"]}
         flex={1}
@@ -47,7 +48,7 @@ export const Main = ({
       <Flex
         flexDirection={["column"]}
         width={["100%", "100%", "50%"]}
-        height={["76%", "76%", "100%"]}
+        height={["74%", "74%", "100%"]}
         p={[2, 2, 4]}
         maxWidth={["640px"]}
       >

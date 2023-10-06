@@ -3,7 +3,12 @@ import { Flex, Text } from "../../elements/index.js";
 export const Interests = ({ interests }) => {
   return (
     <Flex mb={[4]} flexDirection={["column"]}>
-      <Text mb={[3]} fontSize={[3, 4]} color={"text.inverse"}>
+      <Text
+        fontFamily={"CabinSketch"}
+        mb={[3]}
+        fontSize={[3, 4]}
+        color={"text.inverse"}
+      >
         Interests
       </Text>
       <Flex mb={[4]}>
