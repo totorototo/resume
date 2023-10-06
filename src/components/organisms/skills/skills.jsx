@@ -6,7 +6,7 @@ export const Skills = ({ skills }) => {
       <Text
         fontFamily={"CabinSketch"}
         mb={[3]}
-        fontSize={[3, 4]}
+        fontSize={[4]}
         color={"text.inverse"}
       >
         Skills
