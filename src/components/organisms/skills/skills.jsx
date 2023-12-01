@@ -7,13 +7,13 @@ export const Skills = ({ skills }) => {
         fontFamily={"CabinSketch"}
         mb={[3]}
         fontSize={[4]}
-        color={"text.inverse"}
+        color={"ui.secondary"}
       >
         Skills
       </Text>
       {Object.entries(skills).map(([type, list], index) => (
         <Flex mb={[3]} flexDirection={["column"]} key={index}>
-          <Text mb={[1]} fontSize={[2]} color={"text.inverse"}>
+          <Text mb={[1]} fontSize={[2]} color={"text.primary"}>
             {type}
           </Text>
           <Flex width={["100%"]} flexWrap={"wrap"}>

@@ -1,13 +1,34 @@
 import { Flex, Text } from "../../elements/index.js";
+import { useState } from "react";
+import styled from "styled-components";
+import { darken } from "polished";
+
+const AnimatedText = styled(Text)`
+  transition: all 0.3s ease;
+`;
+
+const Pills = styled(Text)`
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: ${(props) => darken(0.2, props.theme.colors.ui.primary)};
+    cursor: pointer;
+  }
+`;
 
 export const Experiences = ({ experiences }) => {
+  const [selectedItem, set] = useState(null);
+
+  function handleClick(item) {
+    set(item);
+  }
+
   return (
     <Flex mb={[4]} flexDirection={["column"]}>
       <Text
         fontFamily={"CabinSketch"}
         mb={[3]}
         fontSize={[4]}
-        color={"text.inverse"}
+        color={"ui.secondary"}
       >
         Experiences
       </Text>
@@ -27,13 +48,17 @@ export const Experiences = ({ experiences }) => {
                       if (index === 0) {
                         return (
                           <Text
-                            color={"text.inverse"}
+                            color={"text.primary"}
                             key={index}
                           >{`${experience.roles[0].role} - ${experience.company}`}</Text>
                         );
                       } else {
                         return (
-                          <Text key={index} color={"text.secondary"}>
+                          <Text
+                            opacity={[0.6]}
+                            key={index}
+                            color={"text.primary"}
+                          >
                             {experience.roles[index].role}
                           </Text>
                         );
@@ -43,30 +68,53 @@ export const Experiences = ({ experiences }) => {
                 ) : (
                   <Text
                     mb={[3]}
-                    color={"text.inverse"}
+                    color={"text.primary"}
                   >{`${experience.roles[0].role} - ${experience.company}`}</Text>
                 )}
               </Flex>
 
               <Flex mb={[3]} flexDirection={["column"]}>
                 {experience.tasks.map((task, index) => (
-                  <Text color={"text.secondary"} key={index}>{`${task}`}</Text>
+                  <AnimatedText
+                    variant={"item"}
+                    mb={[2]}
+                    color={
+                      task.stack.includes(selectedItem)
+                        ? "ui.primary"
+                        : "text.secondary"
+                    }
+                    key={index}
+                  >{`\u2022 ${task.description}`}</AnimatedText>
                 ))}
               </Flex>
               <Flex flexWrap={"wrap"}>
-                {experience.stack.map((item, index) => (
-                  <Text
-                    color={"ui.disabled"}
-                    borderRadius={[2]}
-                    px={[2]}
-                    mr={[2]}
-                    mb={[2]}
-                    bg={"#ffffff20"}
-                    key={index}
-                  >
-                    {item}
-                  </Text>
-                ))}
+                {experience.tasks
+                  .reduce((acc, task) => {
+                    return [...acc, ...task.stack];
+                  }, [])
+                  .reduce((acc, item) => {
+                    if (acc.indexOf(item) < 0) acc.push(item);
+                    return acc;
+                  }, [])
+                  .sort()
+                  .map((item, index) => (
+                    <Pills
+                      onClick={() => handleClick(item)}
+                      color={
+                        item === selectedItem
+                          ? "text.inverse"
+                          : "text.secondary"
+                      }
+                      borderRadius={[2]}
+                      px={[2]}
+                      mr={[2]}
+                      mb={[2]}
+                      bg={item === selectedItem ? "ui.primary" : "#ffffff20"}
+                      key={index}
+                    >
+                      {item}
+                    </Pills>
+                  ))}
               </Flex>
             </Flex>
           </Flex>

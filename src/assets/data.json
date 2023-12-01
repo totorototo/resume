@@ -19,13 +19,27 @@
       ],
       "company": "Dolby.io",
       "tasks": [
-        "Deliver high-quality, robust production code for a diverse array of projects,",
-        "Contribute extensively to the creation of the Dolby.io JavaScript SDK,",
-        "Develop and style interactive web applications for Dolby.io,",
-        "Collaborate with other engineers to create new brands, design systems and websites for Dolby.io,",
-        "Engineer and improve major features of the proprietary Mixer layout application."
-      ],
-      "stack": ["JavaScript", "TypeScript", "React", "Redux", "styled-components", "WebRTC", "CSS", "HTML", "Webpack", "Rollup.js"]
+        {
+          "description": "Deliver high-quality, robust production code for a diverse array of projects",
+          "stack": []
+        },
+        {
+          "description": "Contribute extensively to the creation of the Dolby.io JavaScript SDK",
+          "stack": ["JavaScript", "TypeScript", "Jest", "Puppeter", "WebRTC", "Webpack"]
+        },
+        {
+          "description": "Develop and style interactive web applications for Dolby.io",
+          "stack": ["JavaScript", "TypeScript", "React", "Redux", "Three.js", "HTML", "CSS", "styled components", "styled system", "Puppeter"]
+        },
+        {
+          "description": "Collaborate with other engineers to create new brands, design systems and websites for Dolby.io",
+          "stack": ["JavaScript", "TypeScript", "React","styled components", "styled system", "sketch"]
+        },
+        {
+          "description": "Engineer and improve major features of the proprietary Mixer layout application",
+          "stack": ["JavaScript", "TypeScript", "React", "Redux", "HTML", "CSS"]
+        }
+      ]
     },
     {
       "roles": [
@@ -39,13 +53,35 @@
       ],
       "company": "Lectra",
       "tasks": [
-        "Developed, maintained and shipped production code for client websites primarily using HTML, CSS, Sass and JavaScript,",
-        "Integrated Lectra Fashion PLM into Adobe Creative Suite and Adobe Creative Cloud,",
-        "Built and shipped test automation tools for Modaris (CAD Application),",
-        "Architected and implemented an Adobe Illustrator plug-in for exchanging graphical data with Kaledo Designer,",
-        "Collaborated with other engineers to create a demo application using new Microsoft technologies: Kaledo Trend."
-      ],
-      "stack": ["C++", "C#", "WPF", "Perl", "Adobe Flex", "JavaScript", "TypeScript", "React", "CSS", "HTML"]
+        {
+          "description": "Developed, maintained and shipped production code for client websites",
+          "stack": ["JavaScript", "React", "Redux", "HTML", "CSS", "Azure", "styled components", "styled system", "Puppeter"]
+        },
+        {
+          "description": "Integrated Lectra Fashion PLM into Adobe Creative Suite and Adobe Creative Cloud",
+          "stack": [
+            "JavaScript",
+            "React",
+            "Redux",
+            "HTML",
+            "CSS",
+            "C++",
+            "Adobe Flex"
+          ]
+        },
+        {
+          "description": "Built and shipped test automation tools for Modaris (CAD Application)",
+          "stack": ["Perl", "HTML", "CSS"]
+        },
+        {
+          "description": "Architected and implemented an Adobe Illustrator plug-in for exchanging graphical data with Kaledo Designer",
+          "stack": ["C++"]
+        },
+        {
+          "description": "Collaborated with other engineers to create a demo application using new Microsoft technologies: Kaledo Trend",
+          "stack": ["WPF", "C#"]
+        }
+      ]
     },
     {
       "roles": [
@@ -59,9 +95,11 @@
       ],
       "company": "Packard Bell",
       "tasks": [
-        "Architected and shipped extensions for Windows Media Center."
-      ],
-      "stack": ["C#"]
+        {
+          "description": "Architected and shipped extensions for Windows Media Center",
+          "stack": ["C#"]
+        }
+      ]
     },
     {
       "roles": [
@@ -69,16 +107,21 @@
           "role": "Software Engineer",
           "period": {
             "start": "Oct 2002",
-            "end" : "Nov 2005"
+            "end": "Nov 2005"
           }
         }
       ],
-      "company": "I2M (Imagerie Materiel Medical)",
+      "company": "I2M",
       "tasks": [
-        "Prototyped, designed and built a command station for x-ray generators,",
-        "Developed, maintained and shipped a desktop application used to drive x-ray generators."
-      ],
-      "stack": ["C++", "MFC", "x86 Assembly"]
+        {
+          "description": "Prototyped, designed and built a command station for x-ray generators",
+          "stack": ["x86 Assembly"]
+        },
+        {
+          "description": "Developed, maintained and shipped a desktop application used to drive x-ray generators",
+          "stack": ["C++", "MFC"]
+        }
+      ]
     }
   ],
   "skills": {

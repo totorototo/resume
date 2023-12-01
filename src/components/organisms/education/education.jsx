@@ -7,7 +7,7 @@ export const Education = ({ education }) => {
         fontFamily={"CabinSketch"}
         mb={[3]}
         fontSize={[4]}
-        color={"text.inverse"}
+        color={"ui.secondary"}
       >
         Education
       </Text>
@@ -27,7 +27,7 @@ export const Education = ({ education }) => {
             mb={[2]}
             justifyContent={["center"]}
           >
-            <Text mb={[1]} color={"text.inverse"}>
+            <Text mb={[1]} color={"text.primary"}>
               {item.title}
             </Text>
             <Text color={"text.secondary"}>{item.school}</Text>
