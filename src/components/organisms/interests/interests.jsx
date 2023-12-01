@@ -7,7 +7,7 @@ export const Interests = ({ interests }) => {
         fontFamily={"CabinSketch"}
         mb={[3]}
         fontSize={[4]}
-        color={"text.inverse"}
+        color={"ui.secondary"}
       >
         Interests
       </Text>

@@ -25,6 +25,11 @@ const textVariants = variant({
       ...defaultextStyles,
       fontSize: 0,
     },
+    item: {
+      ...defaultextStyles,
+      textIndent: "-12px",
+      paddingLeft: "12px",
+    },
     label: {
       ...defaultextStyles,
       fontFamily: "heading",
@@ -36,7 +41,8 @@ const textVariants = variant({
 
 export const Text = styled.p`
   ${textVariants}
-  ${typographyFunctions}
+  ${typographyFunctions} /* text-indent: -12px;
+  padding-left: 12px;*/
 `;
 
 Text.defaultProps = {

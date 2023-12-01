@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     //background: radial-gradient(circle at bottom center, #212121 0%, #101010 80%);
-    background: linear-gradient(#212121 0%, #101010 80%);
+    background: linear-gradient(#333333 0%, #101010 70%);
   }
   body {
     font-family: "Open Sans", sans-serif;

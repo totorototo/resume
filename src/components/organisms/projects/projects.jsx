@@ -19,7 +19,7 @@ export const Projects = ({ propjects }) => {
         fontFamily={"CabinSketch"}
         mb={[3]}
         fontSize={[4]}
-        color={"text.inverse"}
+        color={"ui.secondary"}
       >
         Side Projects
       </Text>
@@ -35,7 +35,7 @@ export const Projects = ({ propjects }) => {
               src={getImageUrl(project.name)}
             />
             <Flex ml={[3]} flexDirection={"column"}>
-              <Text mb={[1]} fontSize={[2]} color={"text.inverse"}>
+              <Text mb={[1]} fontSize={[2]} color={"text.primary"}>
                 {`${project.name}`}
               </Text>
               <Text mb={[1]} fontSize={[2]} color={"text.secondary"}>
@@ -47,7 +47,7 @@ export const Projects = ({ propjects }) => {
               <Flex flexWrap={"wrap"}>
                 {project.stack.map((item, index) => (
                   <Text
-                    color={"ui.disabled"}
+                    color={"text.secondary"}
                     borderRadius={[2]}
                     px={[2]}
                     mr={[2]}

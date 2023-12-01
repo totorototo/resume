@@ -3,10 +3,10 @@ import { Flex, Heading, Icons, Link, Text } from "../../elements/index.js";
 export const General = ({ general }) => {
   return (
     <>
-      <Heading fontFamily={"CabinSketch"} color={"text.inverse"}>
+      <Heading fontFamily={"CabinSketch"} color={"ui.secondary"}>
         {general.name}
       </Heading>
-      <Heading pt={[2]} color={"text.inverse"} variant={"heading-5"}>
+      <Heading pt={[2]} color={"ui.secondary"} variant={"heading-5"}>
         {general.role}
       </Heading>
       <Text
@@ -22,12 +22,12 @@ export const General = ({ general }) => {
         <Link
           href={general.linkedin}
           variant="nav1"
-          color={"text.inverse"}
+          color={"text.primary"}
           mr={[3]}
           fontSize={[3]}
           fontWeight={["300"]}
         >
-          <Icons.Linkedin title="twitter" color="text.inverse" />
+          <Icons.Linkedin title="twitter" color="text.primary" />
         </Link>
         <Link
           mr={[3]}
@@ -35,18 +35,18 @@ export const General = ({ general }) => {
           fontWeight={["300"]}
           href={general.github}
           variant="nav1"
-          color={"text.inverse"}
+          color={"text.primary"}
         >
-          <Icons.Github title="twitter" color="text.inverse" />
+          <Icons.Github title="twitter" color="text.primary" />
         </Link>
         <Link
           fontSize={[3]}
           fontWeight={["300"]}
           href={general.twitter}
           variant="nav1"
-          color={"text.inverse"}
+          color={"text.primary"}
         >
-          <Icons.Twitter title="twitter" color="text.inverse" />
+          <Icons.Twitter title="twitter" color="text.primary" />
         </Link>
       </Flex>
     </>
