@@ -35,7 +35,7 @@ export const Main = ({
         top={[20, 0, 0]}
         position={["static", "static", "sticky"]}
         width={["100%", "100%", "50%"]}
-        height={["36%", "36%", "100%"]}
+        height={["42%", "42%", "100%"]}
         color={"text.inverse"}
         flexDirection={["column"]}
         flex={1}
@@ -48,7 +48,7 @@ export const Main = ({
       <Flex
         flexDirection={["column"]}
         width={["100%", "100%", "50%"]}
-        height={["64%", "64%", "100%"]}
+        height={["58%", "58%", "100%"]}
         p={[2, 2, 4]}
         maxWidth={["640px"]}
       >
