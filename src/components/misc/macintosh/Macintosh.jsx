@@ -10,10 +10,6 @@ export function Model(props) {
           geometry={nodes.Object_2.geometry}
           material={materials["02___Default"]}
         />
-        {/*       <mesh
-          geometry={nodes.Object_3.geometry}
-          material={materials.Background}
-        />*/}
         <mesh
           geometry={nodes.Object_4.geometry}
           material={materials.dark_beige}
