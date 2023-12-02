@@ -2,7 +2,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF("/apple_macintosh/scene.gltf");
+  const { nodes, materials } = useGLTF("/resume/apple_macintosh/scene.gltf");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -51,4 +51,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/apple_macintosh/scene.glt");
+useGLTF.preload("/resume/apple_macintosh/scene.glt");
