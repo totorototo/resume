@@ -47,4 +47,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/resume/apple_macintosh/scene.glt");
+useGLTF.preload("/resume/apple_macintosh/scene.gltf");
