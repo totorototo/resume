@@ -1,7 +1,7 @@
 import { Flex, Text } from "../../elements/index.js";
-import { useState } from "react";
 import styled from "styled-components";
 import { darken } from "polished";
+import useStack from "../../../store/store.js";
 
 const AnimatedText = styled(Text)`
   transition: all 0.3s ease;
@@ -16,10 +16,11 @@ const Pills = styled(Text)`
 `;
 
 export const Experiences = ({ experiences }) => {
-  const [selectedItem, set] = useState(null);
+  const selectedItem = useStack((state) => state.selectedItem);
+  const setSelectedItem = useStack((state) => state.setSelectedItem);
 
   function handleClick(item) {
-    set(item);
+    setSelectedItem(item);
   }
 
   return (

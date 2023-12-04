@@ -29,7 +29,7 @@
         },
         {
           "description": "Develop and style interactive web applications for Dolby.io",
-          "stack": ["JavaScript", "TypeScript", "React", "Redux", "Three.js", "HTML", "CSS", "styled components", "styled system", "Puppeter"]
+          "stack": ["JavaScript", "TypeScript", "React", "Redux Saga", "Redux", "Three.js", "HTML", "CSS", "styled components", "styled system", "Puppeter"]
         },
         {
           "description": "Collaborate with other engineers to create new brands, design systems and websites for Dolby.io",
@@ -159,6 +159,20 @@
     }
   ],
   "selectedProjects": [
+    {
+      "name": "Virtual World Demo",
+      "description": "Discover an immersive spatial audio experience through a web application showcasing the Dolby.io Communications API's capabilities on a browser.",
+      "stack": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Redux Saga",
+        "React Three Fiber",
+        "Three.js"
+      ],
+      "url": "https://github.com/dolbyio-samples/comms-app-web-virtual-world-demo",
+      "thumbnail": ""
+    },
     {
       "name": "Lybitos-Strava",
       "description": "React Native application consuming Strava Rest APIs.",

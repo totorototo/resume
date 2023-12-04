@@ -19,7 +19,8 @@
     "react-virtualized-auto-sizer": "^1.0.20",
     "styled-components": "^6.0.8",
     "styled-system": "^5.1.5",
-    "system-components": "^3.0.3"
+    "system-components": "^3.0.3",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
