@@ -1,7 +1,23 @@
 import { Flex, Image, Link, Text } from "../../elements/index.js";
 import lybitos from "../../../assets/Lybitos-Strava.png";
 import positic from "../../../assets/Positic.png";
+import virtualWorld from "../../../assets/virtual-world.png";
 import ultra from "../../../assets/Ultra-buddy.png";
+import useStack from "../../../store/store.js";
+import styled from "styled-components";
+import { darken } from "polished";
+
+const AnimatedText = styled(Text)`
+  transition: all 0.3s ease;
+`;
+
+const Pills = styled(Text)`
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: ${(props) => darken(0.2, props.theme.colors.ui.primary)};
+    cursor: pointer;
+  }
+`;
 
 const getImageUrl = function (name) {
   if (name === "Lybitos-Strava") {
@@ -10,9 +26,18 @@ const getImageUrl = function (name) {
     return positic;
   } else if (name === "Ultra-Buddy") {
     return ultra;
+  } else if (name === "Virtual World Demo") {
+    return virtualWorld;
   } else lybitos;
 };
 export const Projects = ({ propjects }) => {
+  const selectedItem = useStack((state) => state.selectedItem);
+  const setSelectedItem = useStack((state) => state.setSelectedItem);
+
+  function handleClick(item) {
+    setSelectedItem(item);
+  }
+
   return (
     <Flex mb={[4]} flexDirection={["column"]}>
       <Text
@@ -38,25 +63,36 @@ export const Projects = ({ propjects }) => {
               <Text mb={[1]} fontSize={[2]} color={"text.primary"}>
                 {`${project.name}`}
               </Text>
-              <Text mb={[1]} fontSize={[2]} color={"text.secondary"}>
+              <AnimatedText
+                mb={[1]}
+                fontSize={[2]}
+                color={
+                  project.stack.includes(selectedItem)
+                    ? "ui.primary"
+                    : "text.secondary"
+                }
+              >
                 {project.description}
-              </Text>
+              </AnimatedText>
               <Link href={project.url} variant="nav1" mb={[2]}>
                 <Text color={"text.secondary"}>{project.url}</Text>
               </Link>
               <Flex flexWrap={"wrap"}>
                 {project.stack.map((item, index) => (
-                  <Text
-                    color={"text.secondary"}
+                  <Pills
+                    onClick={() => handleClick(item)}
+                    color={
+                      item === selectedItem ? "text.inverse" : "text.secondary"
+                    }
                     borderRadius={[2]}
                     px={[2]}
                     mr={[2]}
                     mb={[2]}
-                    bg={"#ffffff20"}
+                    bg={item === selectedItem ? "ui.primary" : "#ffffff20"}
                     key={index}
                   >
                     {item}
-                  </Text>
+                  </Pills>
                 ))}
               </Flex>
             </Flex>
