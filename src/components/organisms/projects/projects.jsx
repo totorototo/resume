@@ -5,18 +5,12 @@ import virtualWorld from "../../../assets/virtual-world.png";
 import ultra from "../../../assets/Ultra-buddy.png";
 import useStack from "../../../store/store.js";
 import styled from "styled-components";
-import { darken } from "polished";
+import { Pill } from "../pill/index.js";
+import { useRef } from "react";
+import useOnClickOutside from "../../misc/hooks/useClickOutside.js";
 
 const AnimatedText = styled(Text)`
   transition: all 0.3s ease;
-`;
-
-const Pills = styled(Text)`
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: ${(props) => darken(0.2, props.theme.colors.ui.primary)};
-    cursor: pointer;
-  }
 `;
 
 const getImageUrl = function (name) {
@@ -33,6 +27,9 @@ const getImageUrl = function (name) {
 export const Projects = ({ propjects }) => {
   const selectedItem = useStack((state) => state.selectedItem);
   const setSelectedItem = useStack((state) => state.setSelectedItem);
+
+  const ref = useRef();
+  useOnClickOutside(ref, () => setSelectedItem(null));
 
   function handleClick(item) {
     setSelectedItem(item);
@@ -77,22 +74,14 @@ export const Projects = ({ propjects }) => {
               <Link href={project.url} variant="nav1" mb={[2]}>
                 <Text color={"text.secondary"}>{project.url}</Text>
               </Link>
-              <Flex flexWrap={"wrap"}>
+              <Flex ref={ref} flexWrap={"wrap"}>
                 {project.stack.map((item, index) => (
-                  <Pills
-                    onClick={() => handleClick(item)}
-                    color={
-                      item === selectedItem ? "text.inverse" : "text.secondary"
-                    }
-                    borderRadius={[2]}
-                    px={[2]}
-                    mr={[2]}
-                    mb={[2]}
-                    bg={item === selectedItem ? "ui.primary" : "#ffffff20"}
+                  <Pill
+                    handler={() => handleClick(item)}
+                    selected={item === selectedItem}
+                    label={item}
                     key={index}
-                  >
-                    {item}
-                  </Pills>
+                  />
                 ))}
               </Flex>
             </Flex>

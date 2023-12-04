@@ -1,23 +1,20 @@
 import { Flex, Text } from "../../elements/index.js";
 import styled from "styled-components";
-import { darken } from "polished";
 import useStack from "../../../store/store.js";
+import { useRef } from "react";
+import useOnClickOutside from "../../misc/hooks/useClickOutside.js";
+import { Pill } from "../pill/index.js";
 
 const AnimatedText = styled(Text)`
   transition: all 0.3s ease;
 `;
 
-const Pills = styled(Text)`
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: ${(props) => darken(0.2, props.theme.colors.ui.primary)};
-    cursor: pointer;
-  }
-`;
-
 export const Experiences = ({ experiences }) => {
   const selectedItem = useStack((state) => state.selectedItem);
   const setSelectedItem = useStack((state) => state.setSelectedItem);
+
+  const ref = useRef();
+  useOnClickOutside(ref, () => setSelectedItem(null));
 
   function handleClick(item) {
     setSelectedItem(item);
@@ -88,7 +85,7 @@ export const Experiences = ({ experiences }) => {
                   >{`\u2022 ${task.description}`}</AnimatedText>
                 ))}
               </Flex>
-              <Flex flexWrap={"wrap"}>
+              <Flex ref={ref} flexWrap={"wrap"}>
                 {experience.tasks
                   .reduce((acc, task) => {
                     return [...acc, ...task.stack];
@@ -99,22 +96,12 @@ export const Experiences = ({ experiences }) => {
                   }, [])
                   .sort()
                   .map((item, index) => (
-                    <Pills
-                      onClick={() => handleClick(item)}
-                      color={
-                        item === selectedItem
-                          ? "text.inverse"
-                          : "text.secondary"
-                      }
-                      borderRadius={[2]}
-                      px={[2]}
-                      mr={[2]}
-                      mb={[2]}
-                      bg={item === selectedItem ? "ui.primary" : "#ffffff20"}
+                    <Pill
+                      handler={() => handleClick(item)}
+                      selected={item === selectedItem}
+                      label={item}
                       key={index}
-                    >
-                      {item}
-                    </Pills>
+                    />
                   ))}
               </Flex>
             </Flex>
