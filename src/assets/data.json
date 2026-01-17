@@ -1,4 +1,18 @@
 {
+  "general": {
+    "name": "Thomas Gilbert",
+    "role": "Staff Software Engineer | High-Performance Web & Systems",
+    "pickupLine": "I build high-performance web engines and data-driven experiences, bridging the gap between systems programming and the modern web.",
+    "email": "thomas.gilbert3@free.fr",
+    "github": "https://github.com/totorototo",
+    "webSiteUrl": "https://totorototo.github.io/resume/",
+    "linkedin": "https://www.linkedin.com/in/thomas-gilbert-b96b3a100"
+  },
+  "about": [
+    "I first fell into the coding rabbit hole in 1998, and that curiosity has never left me. From early desktop apps to building complex software for global leaders like Lectra, my journey has always been about one thing: making technology work better for people.",
+    "These days, I’m focused on the frontier of web performance. I love exploring modern tools like Zig and WebAssembly to bring near-native speed to the browser. My specialty is turning heavy, complex data into smooth, meaningful experiences—whether I’m architecting industrial solutions or crafting high-performance tools for the trail running community.",
+    "When I’m away from my desk, you’ll find me road or trail running, enjoying life with my wife and daughter, or getting lost in my favorite music."
+  ],
   "experiences": [
     {
       "roles": [
@@ -13,7 +27,7 @@
       "company": "Lectra",
       "tasks": [
         {
-          "description": "Architecting cloud-integrated manufacturing solutions for Fashion 4.0, focusing on scalable TypeScript architectures and robust Azure integration.",
+          "description": "Architecting cloud-integrated manufacturing solutions for Fashion 4.0, enhancing system scalability and developer velocity through robust TypeScript architectures and Azure integration.",
           "stack": [
             "TypeScript",
             "Node.js",
@@ -37,7 +51,7 @@
       "company": "Dolby.io",
       "tasks": [
         {
-          "description": "Led the architecture and delivery of the Dolby.io JavaScript SDK, ensuring high-performance WebRTC streaming and reliable production-grade code.",
+          "description": "Led the architecture and delivery of the Dolby.io JavaScript SDK, enabling thousands of developers to integrate high-performance WebRTC streaming with production-grade reliability.",
           "stack": [
             "TypeScript",
             "WebRTC",
@@ -47,7 +61,7 @@
           ]
         },
         {
-          "description": "Engineered high-performance 3D spatial audio interfaces and interactive mixers using Three.js and React, optimizing complex state management and real-time rendering.",
+          "description": "Engineered high-performance 3D spatial audio interfaces and interactive mixers, reducing rendering overhead through optimized Three.js state management and real-time processing.",
           "stack": [
             "React",
             "Three.js",
@@ -56,7 +70,7 @@
           ]
         },
         {
-          "description": "Established cross-functional Design Systems and engineering standards to accelerate product delivery across Dolby.io brands.",
+          "description": "Established cross-functional Design Systems and engineering standards to accelerate product delivery across the Dolby.io ecosystem.",
           "stack": [
             "Design Systems",
             "Webpack",
@@ -78,7 +92,7 @@
       "company": "Lectra",
       "tasks": [
         {
-          "description": "Bridge the gap between CAD industrial software and creative suites by architecting C++ plugins for high-precision graphical data exchange.",
+          "description": "Developed high-precision C++ plugins for graphical data exchange, bridging the gap between CAD industrial software and creative design suites.",
           "stack": [
             "C++",
             "C#",
@@ -87,7 +101,7 @@
           ]
         },
         {
-          "description": "Integrated PLM workflows into Adobe Creative Cloud, optimizing complex vector data transformations for industrial fashion production.",
+          "description": "Optimized complex vector data transformations by integrating PLM workflows directly into Adobe Creative Cloud via custom SDK bridges.",
           "stack": [
             "JavaScript",
             "React",
@@ -96,7 +110,7 @@
           ]
         },
         {
-          "description": "Developed critical automation and testing tools for Modaris CAD applications to ensure software reliability for global fashion clients.",
+          "description": "Built critical automation frameworks for Modaris CAD applications to ensure software reliability for Tier-1 global fashion clients.",
           "stack": [
             "Perl",
             "Automation Engineering"
@@ -117,7 +131,7 @@
       "company": "I2M / Packard Bell",
       "tasks": [
         {
-          "description": "Built mission-critical command stations for X-ray generators, ensuring real-time hardware safety through low-level x86 Assembly and C++ programming.",
+          "description": "Built mission-critical command stations for X-ray generators, ensuring 100% hardware safety through low-level x86 Assembly and real-time C++ programming.",
           "stack": [
             "x86 Assembly",
             "C++",
@@ -126,7 +140,7 @@
           ]
         },
         {
-          "description": "Shipped specialized extensions for Windows Media Center, leveraging C# for hardware-software integration.",
+          "description": "Shipped specialized hardware-software integration extensions for Windows Media Center using C# and .NET.",
           "stack": [
             "C#",
             "Windows Media Center SDK"
@@ -165,39 +179,10 @@
       "CI/CD (GitHub Actions)"
     ]
   },
-  "education": [
-    {
-      "school": "Ecole supérieure des technologies électroniques, informatique et infographie",
-      "title": "Diplôme de maître ingénieur en sciences et techniques: systèmes électroniques, réseaux informatiques et télécommunications",
-      "location": "Bordeaux",
-      "period": {
-        "start": "2000",
-        "end": "2002"
-      }
-    },
-    {
-      "school": "L.T.P. La Baronnerie",
-      "title": "B.T.S. électronique",
-      "location": "Angers",
-      "period": {
-        "start": "1998",
-        "end": "2000"
-      }
-    },
-    {
-      "school": "Lycée Saint Martin",
-      "title": "Baccalauréat scientifique",
-      "location": "Angers",
-      "period": {
-        "start": "1995",
-        "end": "1998"
-      }
-    }
-  ],
   "selectedProjects": [
     {
       "name": "Terminus",
-      "description": "A high-performance geospatial engine for trail runners. It bridges Systems Programming and the Web by leveraging Zig and WebAssembly to perform complex pathfinding and elevation profile calculations directly in-browser with near-native latency.",
+      "description": "A high-performance geospatial engine for trail runners. It leverages Zig and WebAssembly to perform complex pathfinding and elevation calculations in-browser with near-native speed.",
       "stack": [
         "Zig",
         "WebAssembly",
@@ -209,14 +194,14 @@
       ],
       "url": "https://github.com/totorototo/terminus",
       "highlights": [
-        "Custom geospatial engine in Zig for sub-millisecond data processing.",
+        "Custom engine in Zig for sub-millisecond data processing.",
         "Zero-copy memory architecture between Wasm and React for fluid 3D rendering.",
-        "Optimized elevation and grade analysis algorithms for large-scale GPX datasets."
+        "Optimized elevation analysis algorithms for large-scale GPX datasets."
       ]
     },
     {
       "name": "Virtual World Demo",
-      "description": "An immersive spatial audio showcase built for Dolby.io. It demonstrates high-fidelity real-time communication by integrating 3D environments with spatialized WebRTC audio streams.",
+      "description": "An immersive spatial audio experience built for Dolby.io, showcasing real-time communication by integrating 3D environments with WebRTC audio streams.",
       "stack": [
         "React",
         "React Three Fiber",
@@ -226,13 +211,13 @@
       ],
       "url": "https://github.com/dolbyio-samples/comms-app-web-virtual-world-demo",
       "highlights": [
-        "Dynamic 3D audio positioning based on user proximity and orientation.",
-        "Seamless integration of Dolby.io SDK with React Three Fiber for interactive UX."
+        "Dynamic 3D audio positioning based on user proximity.",
+        "Seamless integration of Dolby.io SDK with React Three Fiber."
       ]
     },
     {
       "name": "Positic",
-      "description": "A lightweight, robust TypeScript utility library for high-precision geolocation manipulation. Built for reliability and performance in mapping and GPS-based applications.",
+      "description": "A lightweight, robust TypeScript library for high-precision geolocation manipulation, built for mapping and GPS-based applications.",
       "stack": [
         "TypeScript",
         "Rollup.js",
@@ -240,13 +225,13 @@
       ],
       "url": "https://github.com/totorototo/positic",
       "highlights": [
-        "Functional approach to coordinate transformation and distance calculations.",
+        "Functional approach to coordinate transformation.",
         "Tree-shakable and developer-friendly API with 100% type safety."
       ]
     },
     {
       "name": "Ultra-Buddy",
-      "description": "A performance-oriented Progressive Web App (PWA) for ultra-endurance athletes. It transforms raw race data into actionable pacing strategies through advanced data visualization.",
+      "description": "A performance-oriented PWA for ultra-endurance athletes, transforming raw race data into pacing strategies via D3.js visualizations.",
       "stack": [
         "JavaScript",
         "React",
@@ -256,44 +241,37 @@
       ],
       "url": "https://github.com/totorototo/ultra-buddy",
       "highlights": [
-        "Custom D3.js race profile visualizations for real-time effort management.",
-        "Offline-first PWA architecture designed for remote mountain environments."
-      ]
-    },
-    {
-      "name": "Lybitos-Strava",
-      "description": "A mobile-first athlete dashboard that bridges the Strava ecosystem with a custom React Native experience, focusing on clean data presentation and seamless API integration.",
-      "stack": [
-        "React Native",
-        "Redux Saga",
-        "Strava API",
-        "OAuth2"
-      ],
-      "url": "https://github.com/totorototo/strava",
-      "highlights": [
-        "Robust OAuth2 flow and secure data synchronization with Strava REST APIs.",
-        "Reactive state management for real-time activity updates on mobile."
+        "Custom D3.js race profiles for real-time effort management.",
+        "Offline-first PWA architecture for remote mountain environments."
       ]
     }
   ],
+  "education": [
+    {
+      "school": "ESTEI (Bordeaux)",
+      "title": "Diplôme de maître ingénieur en sciences et techniques : systèmes électroniques, réseaux informatiques et télécommunications",
+      "period": {
+        "start": "2000",
+        "end": "2002"
+      }
+    },
+    {
+      "school": "L.T.P. La Baronnerie (Angers)",
+      "title": "B.T.S. Électronique",
+      "period": {
+        "start": "1998",
+        "end": "2000"
+      }
+    }
+  ],
   "interests": [
-    "running",
-    "music",
-    "video games",
-    "cycling"
+    "Ultra-trail running",
+    "Synthesizers & Music",
+    "Cycling",
+    "Systems Programming"
   ],
-  "about": [
-    "I first fell into the coding rabbit hole in 1998, and that curiosity has never left me. From early desktop apps to building complex software for global leaders like Lectra, my journey has always been about one thing: making technology work better for people.",
-    "These days, I’m focused on the frontier of web performance. I love exploring modern tools like Zig and WebAssembly to bring near-native speed to the browser. My specialty is turning heavy, complex data into smooth, meaningful experiences—whether I’m architecting industrial solutions or crafting high-performance tools for the trail running community.",
-    "When I’m away from my desk, you’ll find me road or trail running, enjoying life with my wife and daughter, or getting lost in my favorite music."
-  ],
-  "general": {
-    "name": "Thomas Gilbert",
-    "role": "Software Engineer at Lectra",
-    "pickupLine": "I build high-performance web engines and data-driven experiences, bridging the gap between systems programming and the modern web.",
-    "email": "thomas.gilbert3@free.fr",
-    "github": "https://github.com/totorototo",
-    "webSiteUrl": "https://totorototo.github.io/resume/",
-    "linkedin": "https://www.linkedin.com/in/thomas-gilbert-b96b3a100"
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/thomas-gilbert-b96b3a100",
+    "github": "https://github.com/totorototo"
   }
 }
