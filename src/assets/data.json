@@ -136,34 +136,33 @@
     }
   ],
   "skills": {
-    "Programming languages": [
-      "JavaScript",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Sass",
-      "C#",
-      "WPF",
+    "Systems & Performance": [
+      "Zig",
+      "WebAssembly (Wasm)",
       "C++",
-      "Rust",
-      "Zig"
+      "Performance Optimization",
+      "Memory Management"
     ],
-    "Libraries and frameworks": [
+    "Graphics & Visualization": [
+      "Three.js",
+      "WebGL",
+      "D3.js",
+      "Geospatial Data (GIS)",
+      "3D Rendering"
+    ],
+    "Frontend Architecture": [
       "React",
-      "Next.js",
-      "Gatsby",
-      "React Native"
+      "TypeScript",
+      "SDK Design",
+      "WebRTC",
+      "Design Systems"
     ],
-    "Tools and platforms": [
+    "Tools and Environments": [
+      "Node.js",
+      "Azure",
       "Git",
-      "GitHub",
-      "Vercel",
-      "Netlify",
-      "Docker",
-      "Webpack",
-      "Rollup.js",
-      "Vite",
-      "Storybook"
+      "Jest / Puppeteer / Playwright",
+      "CI/CD (GitHub Actions)"
     ]
   },
   "education": [
