@@ -47,15 +47,6 @@ export const General = ({ general }) => {
         >
           <Icons.Github title="twitter" color="text.primary" />
         </Link>
-        <Link
-          fontSize={[3]}
-          fontWeight={["300"]}
-          href={general.twitter}
-          variant="nav1"
-          color={"text.primary"}
-        >
-          <Icons.Twitter title="twitter" color="text.primary" />
-        </Link>
       </Flex>
     </Flex>
   );
