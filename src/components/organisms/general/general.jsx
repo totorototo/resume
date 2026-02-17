@@ -1,6 +1,8 @@
 import { Flex, Heading, Icons, Link, Text } from "../../elements/index.js";
-import { Scene } from "../scene/scene.jsx";
+import { lazy, Suspense } from "react";
 import AutoSizer from "react-virtualized-auto-sizer";
+
+const Scene = lazy(() => import("../scene/scene.jsx").then(m => ({ default: m.Scene })));
 
 export const General = ({ general }) => {
   return (
@@ -21,9 +23,11 @@ export const General = ({ general }) => {
         {general.pickupLine}
       </Text>
       <Flex width={["100%"]} height={["200px", "300px", "400px"]}>
-        <AutoSizer>
-          {({ width, height }) => <Scene width={width} height={height} />}
-        </AutoSizer>
+        <Suspense fallback={<div style={{ width: "100%", height: "100%" }} />}>
+          <AutoSizer>
+            {({ width, height }) => <Scene width={width} height={height} />}
+          </AutoSizer>
+        </Suspense>
       </Flex>
 
       <Flex mt={"auto"} width={["100%"]}>
