@@ -28,7 +28,7 @@ const getImageUrl = function (name) {
     return virtualWorld;
   } else lybitos;
 };
-export const Projects = ({ propjects }) => {
+export const Projects = ({ projects }) => {
   const selectedItem = useStack((state) => state.selectedItem);
   const setSelectedItem = useStack((state) => state.setSelectedItem);
 
@@ -49,7 +49,7 @@ export const Projects = ({ propjects }) => {
       >
         Side Projects
       </Text>
-      {propjects.map((project, index) => (
+      {projects.map((project, index) => (
         <Flex flexDirection={["column"]} mb={[3]} key={index}>
           <Flex flexDirection={"row"} alignItems={"flex-start"}>
             <Link href={project.url}>

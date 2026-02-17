@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import styled from "styled-components";
 import { Image } from "../image";
 import { AspectRatio } from "../aspect-ratio";
@@ -8,7 +8,7 @@ const CoverImage = styled(Image)({
   objectPosition: "center",
 });
 
-export const AspectImage = forwardRef(({ ratio, children, ...props }, ref) => (
+export const AspectImage = forwardRef(({ ratio, _children, ...props }, ref) => (
   <AspectRatio ratio={ratio}>
     <CoverImage ref={ref} {...props} />
   </AspectRatio>

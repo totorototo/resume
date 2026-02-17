@@ -35,7 +35,7 @@ export const General = ({ general }) => {
           fontSize={[3]}
           fontWeight={["300"]}
         >
-          <Icons.Linkedin title="twitter" color="text.primary" />
+          <Icons.Linkedin title="LinkedIn" color="text.primary" />
         </Link>
         <Link
           mr={[3]}
@@ -45,7 +45,7 @@ export const General = ({ general }) => {
           variant="nav1"
           color={"text.primary"}
         >
-          <Icons.Github title="twitter" color="text.primary" />
+          <Icons.Github title="GitHub" color="text.primary" />
         </Link>
       </Flex>
     </Flex>

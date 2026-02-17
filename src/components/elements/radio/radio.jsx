@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import styled, { css } from "styled-components";
 import { Text } from "../text";
 import { Icons } from "../icons";
@@ -71,7 +71,7 @@ const RadioIcon = (props) => (
 
 export const Radio = forwardRef(
   (
-    { children, label, disabled, error, mb, mt, mx, my, ml, mr, ...props },
+    { _children, label, disabled, error, mb, mt, mx, my, ml, mr, ...props },
     ref
   ) => (
     <Text

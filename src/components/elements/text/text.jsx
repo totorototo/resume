@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { variant } from "styled-system";
 import { typographyFunctions } from "../typography-functions";
+import { shouldForwardProp } from "../styled-system-props";
 
 const defaultextStyles = {
   fontFamily: "body",
@@ -39,7 +40,9 @@ const textVariants = variant({
   },
 });
 
-export const Text = styled.p`
+export const Text = styled.p.withConfig({
+  shouldForwardProp
+})`
   ${textVariants}
   ${typographyFunctions} /* text-indent: -12px;
   padding-left: 12px;*/

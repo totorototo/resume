@@ -9,8 +9,11 @@ import {
   space,
   gridArea,
 } from "styled-system";
+import { shouldForwardProp } from "../styled-system-props";
 
-export const Box = styled.div(
+export const Box = styled.div.withConfig({
+  shouldForwardProp
+})(
   {
     boxSizing: "border-box",
     minWidth: 0,

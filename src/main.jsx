@@ -6,6 +6,7 @@ import theme from "./theme/Theme";
 
 import CabinSketch from "./assets/fonts/CabinSketch-Regular.ttf";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const GlobalStyle = createGlobalStyle`
 
   @font-face {

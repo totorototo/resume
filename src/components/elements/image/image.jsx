@@ -8,6 +8,7 @@ import {
   space,
   variant,
 } from "styled-system";
+import { shouldForwardProp } from "../styled-system-props";
 
 const imageVariants = variant({
   variants: {
@@ -25,7 +26,9 @@ const imageVariants = variant({
   },
 });
 
-export const Image = styled.img(
+export const Image = styled.img.withConfig({
+  shouldForwardProp
+})(
   {
     //maxWidth: "100%",
     height: "auto",

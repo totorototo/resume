@@ -1,4 +1,4 @@
-import { lighten, darken } from "polished";
+import { darken } from "polished";
 
 export const fonts = {
   body: '"Helvetica Neue", Roboto, sans-serif',

@@ -55,7 +55,7 @@ export const Main = ({
         <About about={about} />
         <Experiences experiences={experiences} />
         <Skills skills={skills} />
-        <Projects propjects={selectedProjects} />
+        <Projects projects={selectedProjects} />
         <Education education={education} />
         <Interests interests={interests} />
       </Flex>

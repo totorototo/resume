@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { variant } from "styled-system";
 import { typographyFunctions } from "../typography-functions";
+import { shouldForwardProp } from "../styled-system-props";
 
 const defaultHeadingStyles = {
   fontFamily: "heading",
@@ -36,7 +37,9 @@ const headingVariant = variant({
   },
 });
 
-export const Heading = styled.h1`
+export const Heading = styled.h1.withConfig({
+  shouldForwardProp
+})`
   ${headingVariant}
   ${typographyFunctions}
 `;

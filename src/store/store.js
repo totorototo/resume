@@ -6,7 +6,7 @@ const useStack = create(
     stack: [],
     selectedItem: null,
     addItems: (items) =>
-      set((state) => ({ ...state, items: [...state.stack, ...items] })),
+      set((state) => ({ ...state, stack: [...state.stack, ...items] })),
     setSelectedItem: (item) => set({ selectedItem: item }),
   })),
 );

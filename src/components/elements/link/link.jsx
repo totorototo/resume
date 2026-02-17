@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { variant } from "styled-system";
 import { typographyFunctions } from "../typography-functions";
+import { shouldForwardProp } from "../styled-system-props";
 
 const linkVariants = variant({
   variants: {
@@ -83,7 +84,9 @@ const linkVariants = variant({
   },
 });
 
-export const Link = styled.a`
+export const Link = styled.a.withConfig({
+  shouldForwardProp
+})`
   ${linkVariants}
   ${typographyFunctions}
 `;
