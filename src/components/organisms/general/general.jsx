@@ -20,7 +20,7 @@ export const General = ({ general }) => {
         fontSize={[2]}
         color={"text.secondary"}
       >
-        {general.pickupLine}
+        {general.bio}
       </Text>
       <Flex width={["100%"]} height={["200px", "300px", "400px"]}>
         <Suspense fallback={<div style={{ width: "100%", height: "100%" }} />}>
