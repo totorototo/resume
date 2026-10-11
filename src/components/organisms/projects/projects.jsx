@@ -1,6 +1,5 @@
 import { Flex, Image, Link, Text } from "../../elements/index.js";
 import lybitos from "../../../assets/Lybitos-Strava.png";
-import positic from "../../../assets/Positic.png";
 import virtualWorld from "../../../assets/virtual-world.png";
 import ultra from "../../../assets/Ultra-buddy.png";
 import terminus from "../../../assets/terminus.png";
@@ -15,13 +14,11 @@ const AnimatedText = styled(Text)`
 `;
 
 const getImageUrl = function (name) {
-  if (name === "Terminus") {
+  if (name === "Terminus, Waymark & Retrace") {
     return terminus;
   }
   if (name === "Lybitos-Strava") {
     return lybitos;
-  } else if (name === "Positic") {
-    return positic;
   } else if (name === "Ultra-Buddy") {
     return ultra;
   } else if (name === "Virtual World Demo") {

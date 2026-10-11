@@ -1,7 +1,7 @@
 {
   "general": {
     "name": "Thomas Gilbert",
-    "role": "Staff Software Engineer | High-Performance Web & Systems",
+    "role": "Senior Software Engineer | High-Performance Web & Systems",
     "bio": "I build high-performance web engines and data-driven experiences, bridging the gap between systems programming and the modern web.",
     "email": "thomas.gilbert3@free.fr",
     "github": "https://github.com/totorototo",
@@ -17,10 +17,31 @@
     {
       "roles": [
         {
+          "role": "Senior Software Engineer (Front-End)",
+          "period": {
+            "start": "Sep 2026",
+            "end": "Present"
+          }
+        }
+      ],
+      "company": "Swan",
+      "tasks": [
+        {
+          "description": "Building the front-end of Swan's embedded banking platform, enabling companies to integrate accounts, cards and payments directly into their products.",
+          "stack": [
+            "TypeScript",
+            "React"
+          ]
+        }
+      ]
+    },
+    {
+      "roles": [
+        {
           "role": "Senior Software Engineer",
           "period": {
-            "start": "Early 2024",
-            "end": "Present"
+            "start": "Mar 2024",
+            "end": "Aug 2026"
           }
         }
       ],
@@ -181,8 +202,8 @@
   },
   "selectedProjects": [
     {
-      "name": "Terminus",
-      "description": "A high-performance geospatial engine for trail runners. It leverages Zig and WebAssembly to perform complex pathfinding and elevation calculations in-browser with near-native speed.",
+      "name": "Terminus, Waymark & Retrace",
+      "description": "A suite of in-browser tools for trail running, built on shared Zig libraries compiled to WebAssembly. Waymark lets race directors pin checkpoints and cutoffs on a GPX route; Terminus reads it to give runners sub-millisecond elevation and pathfinding with fluid 3D rendering; Retrace debriefs the race, comparing the plan with the recorded run in an offline PWA.",
       "stack": [
         "Zig",
         "WebAssembly",
@@ -190,13 +211,17 @@
         "TypeScript",
         "React",
         "Three.js",
-        "D3.js"
+        "D3.js",
+        "Mapbox",
+        "WebMCP",
+        "Playwright"
       ],
       "url": "https://github.com/totorototo/terminus",
       "highlights": [
-        "Custom engine in Zig for sub-millisecond data processing.",
-        "Zero-copy memory architecture between Wasm and React for fluid 3D rendering.",
-        "Optimized elevation analysis algorithms for large-scale GPX datasets."
+        "Terminus: custom Zig engine for sub-millisecond data processing, with zero-copy memory between Wasm and React for 3D rendering.",
+        "Waymark: GPX editor with track-snapped checkpoints, byte-for-byte lossless export, and WebMCP tools for in-browser AI agents.",
+        "Retrace: plan-vs-actual debrief (GPX vs FIT) where a web worker owns the WASM instance and returns plain JSON.",
+        "Shared Zig libraries of my own (gpxz, fitz, debriefz); Waymark and Retrace are tested end to end with Playwright against the real WASM build."
       ]
     },
     {
@@ -213,20 +238,6 @@
       "highlights": [
         "Dynamic 3D audio positioning based on user proximity.",
         "Seamless integration of Dolby.io SDK with React Three Fiber."
-      ]
-    },
-    {
-      "name": "Positic",
-      "description": "A lightweight, robust TypeScript library for high-precision geolocation manipulation, built for mapping and GPS-based applications.",
-      "stack": [
-        "TypeScript",
-        "Rollup.js",
-        "Unit Testing"
-      ],
-      "url": "https://github.com/totorototo/positic",
-      "highlights": [
-        "Functional approach to coordinate transformation.",
-        "Tree-shakable and developer-friendly API with 100% type safety."
       ]
     },
     {
