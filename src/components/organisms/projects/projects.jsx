@@ -1,8 +1,8 @@
 import { Flex, Image, Link, Text } from "../../elements/index.js";
 import lybitos from "../../../assets/Lybitos-Strava.png";
-import virtualWorld from "../../../assets/virtual-world.png";
-import ultra from "../../../assets/Ultra-buddy.png";
-import terminus from "../../../assets/terminus.png";
+import virtualWorld from "../../../assets/virtual-world.svg";
+import ultra from "../../../assets/ultra-buddy.svg";
+import trailSuite from "../../../assets/trail-suite.svg";
 import useStack from "../../../store/store.js";
 import styled from "styled-components";
 import { Pill } from "../pill/index.js";
@@ -15,7 +15,7 @@ const AnimatedText = styled(Text)`
 
 const getImageUrl = function (name) {
   if (name === "Terminus, Waymark & Retrace") {
-    return terminus;
+    return trailSuite;
   }
   if (name === "Lybitos-Strava") {
     return lybitos;
